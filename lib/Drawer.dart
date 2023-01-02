@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
+import 'package:parth2/result.dart';
 
 class DrawerScreen extends StatefulWidget {
   const DrawerScreen({Key? key}) : super(key: key);
@@ -11,11 +12,10 @@ class DrawerScreen extends StatefulWidget {
 class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AnimatedContainer(
-        color: Colors.brown,
-        duration: const Duration(milliseconds: 600),
-
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text("Hello"),
       ),
     );
   }

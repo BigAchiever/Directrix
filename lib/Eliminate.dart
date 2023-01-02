@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:parth2/Drawer.dart';
 import 'package:parth2/profile.dart';
 import 'package:parth2/result.dart';
 
@@ -38,14 +39,10 @@ class _Home1 extends State<Home1> {
 
                         IconButton(
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  PageTransition(
-                                      type: PageTransitionType.leftToRight,
-                                      duration: const Duration(milliseconds: 500),
-                                      child: const Drawer()));
+                              MaterialPageRoute(builder: (context) => const DrawerScreen());
                             },
-                            icon: const Icon(Icons.menu),),
+                            icon: const Icon(Icons.menu),
+                        ),
                         Text(
                           "SpeakWell",
                           textAlign: TextAlign.center,
